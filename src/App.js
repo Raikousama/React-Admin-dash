@@ -45,7 +45,7 @@ function App() {
   }
 
   const filteredUsers = users.filter(x =>{
-    return x.marks <= userFilter ;
+    return parseInt(x.marks) <= userFilter ;
   });
   return (
     <div className="App">
